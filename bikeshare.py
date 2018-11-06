@@ -9,10 +9,11 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 CITIES = [ 'chicago', 'new york city', 'washington' ]
 
+#set info for use in the date field sort_values
 MONTH_DATA = { 'january': '01',
                'february': '02',
                'march': '03',
-               'april': '04', 
+               'april': '04',
                'may': '05',
                'june' : '06' }
 
