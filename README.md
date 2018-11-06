@@ -1,15 +1,18 @@
 ### Date created
-Include the date you created this project and README file.
+11/6/2018
 
 ### Project Title
-Replace the Project Title
+pdsnd_github
 
 ### Description
-Describe what your project is about and what it does
+Git projecte for Udacity
 
 ### Files used
-Include the files used
+"chicago.csv"
+"new_york_city.csv"
+"washington.csv"
+"bikeshare.py"
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Forked from
+https://github.com/udacity/pdsnd_github
