@@ -3,26 +3,27 @@ import pandas as pd
 import numpy as np
 import datetime
 import calendar
-
+#set city data filenames for use later
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 CITIES = [ 'chicago', 'new york city', 'washington' ]
 
-MONTH_DATA = { 'january': '01', 
+#set info for use in the date field sort_values
+MONTH_DATA = { 'january': '01',
                'february': '02',
-               'march': '03', 
-               'april': '04', 
-               'may': '05', 
+               'march': '03',
+               'april': '04',
+               'may': '05',
                'june' : '06' }
 
 MONTHS = [ 'january', 'february', 'march', 'april', 'may', 'june' ]
 
-DAY_DATA = { 'monday': 0, 
-             'tuesday': 1, 
-             'wednesday': 2, 
-             'thursday': 3, 
-             'friday': 4, 
+DAY_DATA = { 'monday': 0,
+             'tuesday': 1,
+             'wednesday': 2,
+             'thursday': 3,
+             'friday': 4,
              'saturday': 5,
              'sunday': 6}
 
@@ -37,8 +38,8 @@ DAYS_OF_WEEK = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday
     """
 print('Hello! Let\'s explore some US bikeshare data!\n')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
-    
+
+
 def get_city():
     while True:
         city = input('Would you like to explore data for Chicago, New York City, or Washington?\nPlease type the city name in and hit enter.\n> ').lower()
@@ -159,7 +160,7 @@ def user_stats(df):
     # TO DO: Display counts of user types
     user_type_count = df.groupby('User Type')['User Type'].count()
     print('\nDisplay of Counts by ', user_type_count)
-    
+
     # TO DO: Display counts of gender
     gender_type_count = df.groupby('Gender')['Gender'].count()
     print('\nDisplay of Counts by ', gender_type_count)
@@ -196,7 +197,7 @@ def main():
             print('Sorry, there are no user specific stats available for ' + city + ".")
         else:
             user_stats(df)
-    
+
         cnt=0
         while True:
             show_data = input('\nWould you like to see 5 (more) rows of raw data for your selected time\location? Enter yes or no.\n')
@@ -206,8 +207,8 @@ def main():
                 cnt +=5
             else:
                 break
-   
-       
+
+
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             exit()
