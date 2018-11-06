@@ -5,7 +5,7 @@
 pdsnd_github
 
 ### Description
-Git projecte for Udacity
+Git project for Udacity
 
 ### Files used
 "chicago.csv" #file ignored in repository
